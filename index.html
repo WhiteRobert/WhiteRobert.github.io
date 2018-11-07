@@ -344,27 +344,20 @@
 <blockquote>
 <p>git remote -v</p>
 </blockquote>
-<blockquote>
-<p>origin  <a href="http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android</a> (fetch)</p>
-</blockquote>
-<blockquote>
-<p>origin  <a href="http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android</a> (push)</p>
-</blockquote>
-<p>####3.删除远程仓库</p>
-<p>git remote rm origin </p>
-<p>####4.修改远程仓库地址  </p>
-<p>git remote add origin [url]</p>
-<p>将步骤2中得到的仓库地址中的 101.37.69.236 替换为 192.168.30.39</p>
+<pre><code>origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (fetch)
+origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
+</code></pre><p>####3.删除远程仓库</p>
+<pre><code>git remote rm origin 
+</code></pre><p>####4.修改远程仓库地址  </p>
+<pre><code>git remote add origin [url]
+</code></pre><p>将步骤2中得到的仓库地址中的 101.37.69.236 替换为 192.168.30.39</p>
 <blockquote>
 <p>$ git remote add origin <a href="http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android</a></p>
 </blockquote>
-<p>####5.获取新仓库信息和分支情况  </p>
-<blockquote>
-<p>git pull</p>
-</blockquote>
+<p>####5.获取新仓库信息和分支情况<br>    git pull</p>
 <p>####6.本地分支关联到远程分支</p>
-<p>git push –set-upstream origin [分支名]</p>
-<blockquote>
+<pre><code>git push --set-upstream origin [分支名]
+</code></pre><blockquote>
 <p>$ git push –set-upstream origin v2.5.0</p>
 </blockquote>
 <p>####7.远程仓库地址变更完成，可以愉快的提交代码了！！！   </p>
