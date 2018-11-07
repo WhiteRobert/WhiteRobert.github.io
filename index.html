@@ -77,14 +77,40 @@
         <p>##修改git仓库地址</p>
 <p>###步骤（仅供参考，不妥之处请见谅）</p>
 <p>1.系统</p>
-<figure class="highlight plain"><figcaption><span>bash here 打开终端</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line">```Mac OS： terminal终端进入项目根目录</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>commit</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">  </span><br><span class="line">2.查看当前远程仓库地址  </span><br><span class="line">```git remote -v</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (fetch)</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">```origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>windows：项目根目录下鼠标右键，点击git bash here 打开终端</p>
+</blockquote>
+<blockquote>
+<p>Mac OS： terminal终端进入项目根目录</p>
+</blockquote>
+<p>注：如果当前工程处于修改状态，请先git commit</p>
+<p>2.查看当前远程仓库地址  </p>
+<blockquote>
+<p>git remote -v</p>
+</blockquote>
+<blockquote>
+<p>origin  <a href="http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android</a> (fetch)</p>
+</blockquote>
+<blockquote>
+<p>origin  <a href="http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android</a> (push)</p>
+</blockquote>
 <p>3.删除远程仓库</p>
-<figure class="highlight plain"><figcaption><span>remote rm origin </span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"> </span><br><span class="line">4.修改远程仓库地址  </span><br><span class="line">```git remote add origin [url]</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain"><figcaption><span>101.37.69.236 替换为 192.168.30.39</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">```$ git remote add origin http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android</span><br></pre></td></tr></table></figure>
-<p>5.获取新仓库信息和分支情况<br><figure class="highlight plain"><figcaption><span>pull</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line">   </span><br><span class="line">6.本地分支关联到远程分支</span><br><span class="line">```git push --set-upstream origin [分支名]</span><br></pre></td></tr></table></figure></p>
-<p><code>$ git push --set-upstream origin v2.5.0</code></p>
+<p>git remote rm origin </p>
+<p>4.修改远程仓库地址  </p>
+<p>git remote add origin [url]</p>
+<p>将步骤2中得到的仓库地址中的 101.37.69.236 替换为 192.168.30.39</p>
+<blockquote>
+<p>$ git remote add origin <a href="http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android</a></p>
+</blockquote>
+<p>5.获取新仓库信息和分支情况  </p>
+<blockquote>
+<p>git pull</p>
+</blockquote>
+<p>6.本地分支关联到远程分支</p>
+<p>git push –set-upstream origin [分支名]</p>
+<blockquote>
+<p>$ git push –set-upstream origin v2.5.0</p>
+</blockquote>
 <p>7.远程仓库地址变更完成，可以愉快的提交代码了！！！   </p>
 
       
@@ -314,51 +340,6 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/11/07/hello-world/" class="article-date">
-  <time datetime="2018-11-07T06:29:12.757Z" itemprop="datePublished">2018-11-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/11/07/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/11/07/hello-world/" data-id="cjo6sh12n0001u4yvktiqhy4s" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 
 </section>
@@ -395,10 +376,6 @@
         
           <li>
             <a href="/2018/11/07/自定义控件/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/11/07/hello-world/">Hello World</a>
           </li>
         
       </ul>
