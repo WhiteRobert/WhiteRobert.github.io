@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="####1.系统  windows：项目根目录下鼠标右键，点击git bash here 打开终端   Mac OS： terminal终端进入项目根目录  注：如果当前工程处于修改状态，请先git commit ####2.查看当前远程仓库地址    git remote -v  origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMa">
+<meta name="description" content="1.系统 windows：项目根目录下鼠标右键，点击git bash here 打开终端   Mac OS： terminal终端进入项目根目录  注：如果当前工程处于修改状态，请先git commit 2.查看当前远程仓库地址 git remote -v  origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (">
 <meta name="keywords" content="Android">
 <meta property="og:type" content="article">
 <meta property="og:title" content="修改git仓库地址">
 <meta property="og:url" content="http://yoursite.com/2018/11/07/Git仓库地址变更/index.html">
 <meta property="og:site_name" content="白萝卜的blog">
-<meta property="og:description" content="####1.系统  windows：项目根目录下鼠标右键，点击git bash here 打开终端   Mac OS： terminal终端进入项目根目录  注：如果当前工程处于修改状态，请先git commit ####2.查看当前远程仓库地址    git remote -v  origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMa">
+<meta property="og:description" content="1.系统 windows：项目根目录下鼠标右键，点击git bash here 打开终端   Mac OS： terminal终端进入项目根目录  注：如果当前工程处于修改状态，请先git commit 2.查看当前远程仓库地址 git remote -v  origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-07T07:12:50.440Z">
+<meta property="og:updated_time" content="2018-11-07T07:28:19.132Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="修改git仓库地址">
-<meta name="twitter:description" content="####1.系统  windows：项目根目录下鼠标右键，点击git bash here 打开终端   Mac OS： terminal终端进入项目根目录  注：如果当前工程处于修改状态，请先git commit ####2.查看当前远程仓库地址    git remote -v  origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMa">
+<meta name="twitter:description" content="1.系统 windows：项目根目录下鼠标右键，点击git bash here 打开终端   Mac OS： terminal终端进入项目根目录  注：如果当前工程处于修改状态，请先git commit 2.查看当前远程仓库地址 git remote -v  origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (">
 
 
 
@@ -352,36 +352,30 @@
       
 
       
-        <p>####1.系统</p>
-<blockquote>
+        <h4 id="1-系统"><a href="#1-系统" class="headerlink" title="1.系统"></a>1.系统</h4><blockquote>
 <p>windows：项目根目录下鼠标右键，点击git bash here 打开终端</p>
 </blockquote>
 <blockquote>
 <p>Mac OS： terminal终端进入项目根目录</p>
 </blockquote>
 <p>注：如果当前工程处于修改状态，请先git commit</p>
-<p>####2.查看当前远程仓库地址  </p>
-<blockquote>
+<h4 id="2-查看当前远程仓库地址"><a href="#2-查看当前远程仓库地址" class="headerlink" title="2.查看当前远程仓库地址"></a>2.查看当前远程仓库地址</h4><blockquote>
 <p>git remote -v</p>
 </blockquote>
 <pre><code>origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (fetch)
 origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
-</code></pre><p>####3.删除远程仓库</p>
-<pre><code>git remote rm origin 
-</code></pre><p>####4.修改远程仓库地址  </p>
-<pre><code>git remote add origin [url]
+</code></pre><h4 id="3-删除远程仓库"><a href="#3-删除远程仓库" class="headerlink" title="3.删除远程仓库"></a>3.删除远程仓库</h4><pre><code>git remote rm origin 
+</code></pre><h4 id="4-修改远程仓库地址"><a href="#4-修改远程仓库地址" class="headerlink" title="4.修改远程仓库地址"></a>4.修改远程仓库地址</h4><pre><code>git remote add origin [url]
 </code></pre><p>将步骤2中得到的仓库地址中的 101.37.69.236 替换为 192.168.30.39</p>
 <blockquote>
 <p>$ git remote add origin <a href="http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android</a></p>
 </blockquote>
-<p>####5.获取新仓库信息和分支情况<br>    git pull</p>
-<p>####6.本地分支关联到远程分支</p>
-<pre><code>git push --set-upstream origin [分支名]
+<h4 id="5-获取新仓库信息和分支情况"><a href="#5-获取新仓库信息和分支情况" class="headerlink" title="5.获取新仓库信息和分支情况"></a>5.获取新仓库信息和分支情况</h4><pre><code>git pull
+</code></pre><h4 id="6-本地分支关联到远程分支"><a href="#6-本地分支关联到远程分支" class="headerlink" title="6.本地分支关联到远程分支"></a>6.本地分支关联到远程分支</h4><pre><code>git push --set-upstream origin [分支名]
 </code></pre><blockquote>
 <p>$ git push –set-upstream origin v2.5.0</p>
 </blockquote>
-<p>####7.远程仓库地址变更完成，可以愉快的提交代码了！！！   </p>
-
+<h4 id="7-远程仓库地址变更完成，可以愉快的提交代码了！！！"><a href="#7-远程仓库地址变更完成，可以愉快的提交代码了！！！" class="headerlink" title="7.远程仓库地址变更完成，可以愉快的提交代码了！！！"></a>7.远程仓库地址变更完成，可以愉快的提交代码了！！！</h4>
       
     </div>
     
@@ -398,7 +392,7 @@ origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
       
         <div class="post-tags">
           
-            <a href="/tags/Android/" rel="tag"># Android</a>
+            <a href="/tags/Android/" rel="tag"> Android</a>
           
         </div>
       
@@ -471,8 +465,17 @@ origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -532,6 +535,22 @@ origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-系统"><span class="nav-number">1.</span> <span class="nav-text">1.系统</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-查看当前远程仓库地址"><span class="nav-number">2.</span> <span class="nav-text">2.查看当前远程仓库地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-删除远程仓库"><span class="nav-number">3.</span> <span class="nav-text">3.删除远程仓库</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-修改远程仓库地址"><span class="nav-number">4.</span> <span class="nav-text">4.修改远程仓库地址</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-获取新仓库信息和分支情况"><span class="nav-number">5.</span> <span class="nav-text">5.获取新仓库信息和分支情况</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-本地分支关联到远程分支"><span class="nav-number">6.</span> <span class="nav-text">6.本地分支关联到远程分支</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-远程仓库地址变更完成，可以愉快的提交代码了！！！"><span class="nav-number">7.</span> <span class="nav-text">7.远程仓库地址变更完成，可以愉快的提交代码了！！！</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

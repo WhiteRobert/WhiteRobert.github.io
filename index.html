@@ -352,36 +352,30 @@
       
         
           
-            <p>####1.系统</p>
-<blockquote>
+            <h4 id="1-系统"><a href="#1-系统" class="headerlink" title="1.系统"></a>1.系统</h4><blockquote>
 <p>windows：项目根目录下鼠标右键，点击git bash here 打开终端</p>
 </blockquote>
 <blockquote>
 <p>Mac OS： terminal终端进入项目根目录</p>
 </blockquote>
 <p>注：如果当前工程处于修改状态，请先git commit</p>
-<p>####2.查看当前远程仓库地址  </p>
-<blockquote>
+<h4 id="2-查看当前远程仓库地址"><a href="#2-查看当前远程仓库地址" class="headerlink" title="2.查看当前远程仓库地址"></a>2.查看当前远程仓库地址</h4><blockquote>
 <p>git remote -v</p>
 </blockquote>
 <pre><code>origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (fetch)
 origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
-</code></pre><p>####3.删除远程仓库</p>
-<pre><code>git remote rm origin 
-</code></pre><p>####4.修改远程仓库地址  </p>
-<pre><code>git remote add origin [url]
+</code></pre><h4 id="3-删除远程仓库"><a href="#3-删除远程仓库" class="headerlink" title="3.删除远程仓库"></a>3.删除远程仓库</h4><pre><code>git remote rm origin 
+</code></pre><h4 id="4-修改远程仓库地址"><a href="#4-修改远程仓库地址" class="headerlink" title="4.修改远程仓库地址"></a>4.修改远程仓库地址</h4><pre><code>git remote add origin [url]
 </code></pre><p>将步骤2中得到的仓库地址中的 101.37.69.236 替换为 192.168.30.39</p>
 <blockquote>
 <p>$ git remote add origin <a href="http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android</a></p>
 </blockquote>
-<p>####5.获取新仓库信息和分支情况<br>    git pull</p>
-<p>####6.本地分支关联到远程分支</p>
-<pre><code>git push --set-upstream origin [分支名]
+<h4 id="5-获取新仓库信息和分支情况"><a href="#5-获取新仓库信息和分支情况" class="headerlink" title="5.获取新仓库信息和分支情况"></a>5.获取新仓库信息和分支情况</h4><pre><code>git pull
+</code></pre><h4 id="6-本地分支关联到远程分支"><a href="#6-本地分支关联到远程分支" class="headerlink" title="6.本地分支关联到远程分支"></a>6.本地分支关联到远程分支</h4><pre><code>git push --set-upstream origin [分支名]
 </code></pre><blockquote>
 <p>$ git push –set-upstream origin v2.5.0</p>
 </blockquote>
-<p>####7.远程仓库地址变更完成，可以愉快的提交代码了！！！   </p>
-
+<h4 id="7-远程仓库地址变更完成，可以愉快的提交代码了！！！"><a href="#7-远程仓库地址变更完成，可以愉快的提交代码了！！！" class="headerlink" title="7.远程仓库地址变更完成，可以愉快的提交代码了！！！"></a>7.远程仓库地址变更完成，可以愉快的提交代码了！！！</h4>
           
         
       
@@ -522,14 +516,12 @@ origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
       
         
           
-            <p>###A. 属性文件配置</p>
-<p>在项目res/values/下新建attr.xml文件</p>
+            <h3 id="A-属性文件配置"><a href="#A-属性文件配置" class="headerlink" title="A. 属性文件配置"></a>A. 属性文件配置</h3><p>在项目res/values/下新建attr.xml文件</p>
 <pre><code>&lt;attr name=&quot;icon&quot; format=&quot;reference&quot; /&gt;
 &lt;attr name=&quot;color&quot; format=&quot;color&quot; /&gt;
 &lt;attr name=&quot;text&quot; format=&quot;string&quot; /&gt;
 &lt;attr name=&quot;text_size&quot; format=&quot;dimension&quot; /&gt;
-</code></pre><p>####format详解</p>
-<p>1.reference：参考某一资源ID。</p>
+</code></pre><h4 id="format详解"><a href="#format详解" class="headerlink" title="format详解"></a>format详解</h4><p>1.reference：参考某一资源ID。</p>
 <p>(1)属性定义：</p>
 <pre><code>&lt;declare-styleable name = &quot;名称&quot;&gt;
    &lt;attr name = &quot;background&quot; format = &quot;reference&quot; /&gt;
@@ -690,8 +682,7 @@ origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
     android:layout_height = &quot;42dip&quot;
     android:background = &quot;@drawable/图片ID|#00FF00&quot;
     /&gt;
-</code></pre><p>###B. 自定义View构造函数中获取自定义属性value</p>
-<pre><code>/**
+</code></pre><h3 id="B-自定义View构造函数中获取自定义属性value"><a href="#B-自定义View构造函数中获取自定义属性value" class="headerlink" title="B. 自定义View构造函数中获取自定义属性value"></a>B. 自定义View构造函数中获取自定义属性value</h3><pre><code>/**
   * 自定义控件属性配置详解
   * 
   * 获取自定义属性值 属性索引名 = 控件名_属性名
