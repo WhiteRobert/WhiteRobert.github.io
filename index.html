@@ -352,31 +352,25 @@
       
         
           
-            <h4 id="1-系统"><a href="#1-系统" class="headerlink" title="1.系统"></a>1.系统</h4><blockquote>
-<p>windows：项目根目录下鼠标右键，点击git bash here 打开终端</p>
-</blockquote>
-<blockquote>
-<p>Mac OS： terminal终端进入项目根目录</p>
-</blockquote>
-<p>注：如果当前工程处于修改状态，请先git commit</p>
-<h4 id="2-查看当前远程仓库地址"><a href="#2-查看当前远程仓库地址" class="headerlink" title="2.查看当前远程仓库地址"></a>2.查看当前远程仓库地址</h4><blockquote>
-<p>git remote -v</p>
-</blockquote>
-<pre><code>origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (fetch)
-origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
-</code></pre><h4 id="3-删除远程仓库"><a href="#3-删除远程仓库" class="headerlink" title="3.删除远程仓库"></a>3.删除远程仓库</h4><pre><code>git remote rm origin 
-</code></pre><h4 id="4-修改远程仓库地址"><a href="#4-修改远程仓库地址" class="headerlink" title="4.修改远程仓库地址"></a>4.修改远程仓库地址</h4><pre><code>git remote add origin [url]
-</code></pre><p>将步骤2中得到的仓库地址中的 101.37.69.236 替换为 192.168.30.39</p>
-<blockquote>
-<p>$ git remote add origin <a href="http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android" target="_blank" rel="noopener">http://192.168.30.39:3000/TianjinIT/PacificLinksMall-Android</a></p>
-</blockquote>
-<h4 id="5-获取新仓库信息和分支情况"><a href="#5-获取新仓库信息和分支情况" class="headerlink" title="5.获取新仓库信息和分支情况"></a>5.获取新仓库信息和分支情况</h4><pre><code>git pull
-</code></pre><h4 id="6-本地分支关联到远程分支"><a href="#6-本地分支关联到远程分支" class="headerlink" title="6.本地分支关联到远程分支"></a>6.本地分支关联到远程分支</h4><pre><code>git push --set-upstream origin [分支名]
-</code></pre><blockquote>
-<p>$ git push –set-upstream origin v2.5.0</p>
-</blockquote>
-<h4 id="7-远程仓库地址变更完成，可以愉快的提交代码了！！！"><a href="#7-远程仓库地址变更完成，可以愉快的提交代码了！！！" class="headerlink" title="7.远程仓库地址变更完成，可以愉快的提交代码了！！！"></a>7.远程仓库地址变更完成，可以愉快的提交代码了！！！</h4>
-          
+          1.系统
+windows：项目根目录下鼠标右键，点击git bash here 打开终端
+
+
+Mac OS： terminal终端进入项目根目录
+
+注：如果当前工程处于修改状态，请先git commit
+2.查看当前远程仓库地址
+git remote -v
+
+origin  http://101.3
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/07/Git仓库地址变更/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -516,192 +510,17 @@ origin  http://101.37.69.236:3000/TianjinIT/PacificLinksMall-Android (push)
       
         
           
-            <h3 id="A-属性文件配置"><a href="#A-属性文件配置" class="headerlink" title="A. 属性文件配置"></a>A. 属性文件配置</h3><p>在项目res/values/下新建attr.xml文件</p>
-<pre><code>&lt;attr name=&quot;icon&quot; format=&quot;reference&quot; /&gt;
-&lt;attr name=&quot;color&quot; format=&quot;color&quot; /&gt;
-&lt;attr name=&quot;text&quot; format=&quot;string&quot; /&gt;
-&lt;attr name=&quot;text_size&quot; format=&quot;dimension&quot; /&gt;
-</code></pre><h4 id="format详解"><a href="#format详解" class="headerlink" title="format详解"></a>format详解</h4><p>1.reference：参考某一资源ID。</p>
-<p>(1)属性定义：</p>
-<pre><code>&lt;declare-styleable name = &quot;名称&quot;&gt;
-   &lt;attr name = &quot;background&quot; format = &quot;reference&quot; /&gt;
-&lt;/declare-styleable&gt;
-</code></pre><p>(2)属性使用：</p>
-<pre><code>&lt;ImageView
-    android:layout_width = &quot;42dip&quot;
-    android:layout_height = &quot;42dip&quot;
-    android:background = &quot;@drawable/图片ID&quot;
-   /&gt;
-</code></pre><p>2.color：颜色值。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name = &quot;名称&quot;&gt;
-   &lt;attr name = &quot;textColor&quot; format = &quot;color&quot; /&gt;
-&lt;/declare-styleable&gt;
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;TextView
-     android:layout_width = &quot;42dip&quot;
-     android:layout_height = &quot;42dip&quot;
-     android:textColor = &quot;#00FF00&quot;
-     /&gt;
-</code></pre><p>3.boolean：布尔值。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name = &quot;名称&quot;&gt;
-   &lt;attr name = &quot;focusable&quot; format = &quot;boolean&quot; /&gt;
-&lt;/declare-styleable&gt;
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;Button
-    android:layout_width = &quot;42dip&quot;
-    android:layout_height = &quot;42dip&quot;
-    android:focusable = &quot;true&quot;
-    /&gt;
-</code></pre><p>4.dimension：尺寸值。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name = &quot;名称&quot;&gt;
-   &lt;attr name = &quot;layout_width&quot; format = &quot;dimension&quot; /&gt;
-&lt;/declare-styleable&gt;
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;Button
-    android:layout_width = &quot;42dip&quot;
-    android:layout_height = &quot;42dip&quot;
-    /&gt;
-</code></pre><p>5.float：浮点值。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name = &quot;AlphaAnimation&quot;&gt;
-   &lt;attr name = &quot;fromAlpha&quot; format = &quot;float&quot; /&gt;
-   &lt;attr name = &quot;toAlpha&quot; format = &quot;float&quot; /&gt;
-&lt;/declare-styleable&gt;    
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;alpha
-   android:fromAlpha = &quot;1.0&quot;
-   android:toAlpha = &quot;0.7&quot;
-   /&gt;
-</code></pre><p>6.integer：整型值。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name = &quot;AnimatedRotateDrawable&quot;&gt;
-   &lt;attr name = &quot;visible&quot; /&gt;
-   &lt;attr name = &quot;frameDuration&quot; format=&quot;integer&quot; /&gt;
-   &lt;attr name = &quot;framesCount&quot; format=&quot;integer&quot; /&gt;
-   &lt;attr name = &quot;pivotX&quot; /&gt;
-   &lt;attr name = &quot;pivotY&quot; /&gt;
-   &lt;attr name = &quot;drawable&quot; /&gt;
-&lt;/declare-styleable&gt;
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;animated-rotate
-   xmlns:android = &quot;http://schemas.android.com/apk/res/android&quot;  
-   android:drawable = &quot;@drawable/图片ID&quot;  
-   android:pivotX = &quot;50%&quot;  
-   android:pivotY = &quot;50%&quot;  
-   android:framesCount = &quot;12&quot;  
-   android:frameDuration = &quot;100&quot;
-   /&gt;
-</code></pre><p>7.string：字符串。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name = &quot;MapView&quot;&gt;
-   &lt;attr name = &quot;apiKey&quot; format = &quot;string&quot; /&gt;
-&lt;/declare-styleable&gt;
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;com.google.android.maps.MapView
-    android:layout_width = &quot;fill_parent&quot;
-    android:layout_height = &quot;fill_parent&quot;
-    android:apiKey = &quot;0jOkQ80oD1JL9C6HAja99uGXCRiS2CGjKO_bc_g&quot;
-    /&gt;
-</code></pre><p>8.fraction：百分数。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name=&quot;RotateDrawable&quot;&gt;
-   &lt;attr name = &quot;visible&quot; /&gt;
-   &lt;attr name = &quot;fromDegrees&quot; format = &quot;float&quot; /&gt;
-   &lt;attr name = &quot;toDegrees&quot; format = &quot;float&quot; /&gt;
-   &lt;attr name = &quot;pivotX&quot; format = &quot;fraction&quot; /&gt;
-   &lt;attr name = &quot;pivotY&quot; format = &quot;fraction&quot; /&gt;
-   &lt;attr name = &quot;drawable&quot; /&gt;
-&lt;/declare-styleable&gt;
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;rotate
-   xmlns:android = &quot;http://schemas.android.com/apk/res/android&quot;
-   android:interpolator = &quot;@anim/动画ID&quot; 
-   android:fromDegrees = &quot;0&quot; 
-   android:toDegrees = &quot;360&quot;
-   android:pivotX = &quot;200%&quot;
-   android:pivotY = &quot;300%&quot; 
-   android:duration = &quot;5000&quot;
-   android:repeatMode = &quot;restart&quot;
-   android:repeatCount = &quot;infinite&quot;
-   /&gt;
-</code></pre><p>9.enum：枚举值。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name=&quot;名称&quot;&gt;
-   &lt;attr name=&quot;orientation&quot;&gt;
-          &lt;enum name=&quot;horizontal&quot; value=&quot;0&quot; /&gt;
-          &lt;enum name=&quot;vertical&quot; value=&quot;1&quot; /&gt;
-   &lt;/attr&gt;            
-&lt;/declare-styleable&gt;
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;LinearLayout
-    xmlns:android = &quot;http://schemas.android.com/apk/res/android&quot;
-    android:orientation = &quot;vertical&quot;
-    android:layout_width = &quot;fill_parent&quot;
-    android:layout_height = &quot;fill_parent&quot;
-    /&gt;
-</code></pre><p>10.flag：位或运算。</p>
-<p>（1）属性定义：</p>
-<pre><code>&lt;declare-styleable name=&quot;名称&quot;&gt;
-   &lt;attr name=&quot;windowSoftInputMode&quot;&gt;
-           &lt;flag name = &quot;stateUnspecified&quot; value = &quot;0&quot; /&gt;
-           &lt;flag name = &quot;stateUnchanged&quot; value = &quot;1&quot; /&gt;
-           &lt;flag name = &quot;stateHidden&quot; value = &quot;2&quot; /&gt;
-           &lt;flag name = &quot;stateAlwaysHidden&quot; value = &quot;3&quot; /&gt;
-           &lt;flag name = &quot;stateVisible&quot; value = &quot;4&quot; /&gt;
-           &lt;flag name = &quot;stateAlwaysVisible&quot; value = &quot;5&quot; /&gt;
-           &lt;flag name = &quot;adjustUnspecified&quot; value = &quot;0x00&quot; /&gt;
-           &lt;flag name = &quot;adjustResize&quot; value = &quot;0x10&quot; /&gt;
-           &lt;flag name = &quot;adjustPan&quot; value = &quot;0x20&quot; /&gt;
-           &lt;flag name = &quot;adjustNothing&quot; value = &quot;0x30&quot; /&gt;
-    &lt;/attr&gt;         
-&lt;/declare-styleable&gt;
-</code></pre><p>（2）属性使用：</p>
-<pre><code>&lt;activity
-   android:name = &quot;.StyleAndThemeActivity&quot;
-   android:label = &quot;@string/app_name&quot;
-   android:windowSoftInputMode = &quot;stateUnspecified | stateUnchanged　|　stateHidden&quot;&gt;
-   &lt;intent-filter&gt;
-          &lt;action android:name = &quot;android.intent.action.MAIN&quot; /&gt;
-          &lt;category android:name = &quot;android.intent.category.LAUNCHER&quot; /&gt;
-   &lt;/intent-filter&gt;
-&lt;/activity&gt;
-</code></pre><blockquote>
-<p>注意：属性定义时可以指定多种类型值。</p>
-</blockquote>
-<p>11.多种属性</p>
-<p>(1)属性定义：</p>
-<pre><code>&lt;declare-styleable name = &quot;名称&quot;&gt;
-   &lt;attr name = &quot;background&quot; format = &quot;reference|color&quot; /&gt;
-&lt;/declare-styleable&gt;
-</code></pre><p>(2)属性使用：</p>
-<pre><code>&lt;ImageView
-    android:layout_width = &quot;42dip&quot;
-    android:layout_height = &quot;42dip&quot;
-    android:background = &quot;@drawable/图片ID|#00FF00&quot;
-    /&gt;
-</code></pre><h3 id="B-自定义View构造函数中获取自定义属性value"><a href="#B-自定义View构造函数中获取自定义属性value" class="headerlink" title="B. 自定义View构造函数中获取自定义属性value"></a>B. 自定义View构造函数中获取自定义属性value</h3><pre><code>/**
-  * 自定义控件属性配置详解
-  * 
-  * 获取自定义属性值 属性索引名 = 控件名_属性名
-  *
-  *1.根据属性集合attrs获取TypeArray对象
-  *  TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.自定义控件名);
-  *2.typedArray.getColor(int index(属性索引名), int defaultValue)/typedArray.getDimensionPixelOffset(int index, int defaultValue)
-  *  获取属性值
-  *3.TypedValue.applyDimension(int Unit, float value, DisplayMetrics displayMetrics)
-  *  这个方法的作用是把Android中非标准度量尺寸变为标准度量尺寸（Android中标准度量尺寸是Px）
-  *  参数Unit:你要转换的目标尺寸类型（控件大小是TypedValue.COMPLEX_UNIT_PX，字体大小是TypedValue.COMPLEX_UNIT_SP）
-  *  参数value:默认的待转换非标准尺寸值(未指定大小时，属性值为默认)
-  *  参数DisplayMetrics:屏幕矩阵{ getResources().getDisplayMetrics() }
-  *4.typedArray.recycle()
-  *  资源回收
-  *
-  */
-</code></pre>
-          
+          A. 属性文件配置在项目res/values/下新建attr.xml文件
+&lt;attr name=&quot;icon&quot; format=&quot;reference&quot; /&gt;
+&lt;attr name=&quot;color&quot; format=&quot;co
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/07/自定义控件/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
